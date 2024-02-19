@@ -13,5 +13,12 @@ module.exports = {
       darkblue: "#18165a",
       lightblue: "#e9f4ff",
     },
+    extend: {
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
+      },
+    },
   },
+
+  plugins: [],
 };
