@@ -1,20 +1,22 @@
 ---
 ---
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full bg-stone-400" >
+<div x-data="{ showmenu: false }" class="" >
     <div id="navbar" class="flex flex-row justify-between">
         <div id="logo" class="">
-            <a class="font-serif text-xl text-orange-700 font-semi-bold" href="#intro">Københavnerbilleder</a>
+            <a class="  " href="">Københavnerbilleder</a>
         </div>
 
-        <button id="burgermenu" class="px-6 text-yellow-900" x-on:click="showmenu = ! showmenu">Menu</button>
+        <button id="burgermenu" class="px-6" x-on:click="showmenu = ! showmenu">Menu</button>
     </div>
     <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
     x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
         <ul >
-            <li class="text-yellow-900 text-center py-2 border-y-2"><a href="#intro">Københavnerbilleder</a></li>
-            <li class="text-yellow-900 text-center py-2 border-b-2"><a href="#indhold">Bogens indhold</a></li>
-            <li class="text-yellow-900 text-center py-2 border-b-2"><a href="#forfatteren">Forfatteren</a></li>
-            <li class="text-yellow-900 text-center py-2 border-b-2"><a href="#buy_now">Køb nu</a></li>
+            <li class=""><a href="#digitaltskrald">Hvad er digitalt skrald</a></li>
+            <li class=""><a href="#vigtigt">Hvorfor er det vigtigt</a></li>
+            <li class=""><a href="#vidstedu">Vidste du at</a></li>
+            <li class=""><a href="#guidelines">Guidelines til digital oprydning</a></li>
+            <li class=""><a href="#digitaloprydning">Gode råd til digital oprydning</a></li>
+            <li class=""><a href="#regisrer">Registrer din digitale oprydning</a></li>
         </ul>
     </nav>
 </div>
