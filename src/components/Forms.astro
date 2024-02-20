@@ -1,58 +1,72 @@
-<h2 class="text-5xl font-bold font-poppins mb-4 text-center text-darkblue">
+<section class="bg-lightpink"> 
+
+
+<h1 class="text-5xl font-bold font-poppins text-center text-darkblue ">
   Regsistrer din digitale oprydning
-</h2>
+</h1>
 <div class="max-w-md mx-auto">
-  <form class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
-    <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="fornavn">
+  <form class="bg-lightblue shadow-md rounded px-8 pt-6 pb-8 mt-20">
+    <div class="mb-4 ">
+      <label class="block text-wine  font-poppins text-sm font-bold mb-2" for="fornavn">
         Fornavn
       </label>
       <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        class=" border-wine shadow appearance-none border text-pink  rounded-lg w-full py-2 px-3  placeholder-wine placeholder-opacity-80 leading-tight focus:outline-none focus:shadow-outline"
         id="fornavn"
         type="text"
         placeholder="Indtast fornavn"
       />
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="efternavn">
+      <label class="block text-wine font-poppins  text-sm font-bold mb-2" for="efternavn">
         Efternavn
       </label>
       <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        class="border-wine shadow appearance-none border rounded-lg w-full py-2 px-3 text-pink leading-tight  placeholder-wine placeholder-opacity-80 focus:outline-none focus:shadow-outline"
         id="efternavn"
         type="text"
         placeholder="Indtast efternavn"
       />
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="email">
+      <label class="block text-wine font-poppins text-sm font-bold mb-2" for="email">
         Email
       </label>
       <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        class="border-wine shadow appearance-none border rounded-lg w-full py-2 px-3 text-pink  placeholder-wine placeholder-opacity-80 leading-tight focus:outline-none focus:shadow-outline"
         id="email"
         type="email"
-        placeholder="Indtast email"
+        placeholder="Indtast email "
       />
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="land">
+      <label class="block text-wine font-poppins text-sm font-bold mb-2" for="land">
         Land
       </label>
       <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+        class=" border-wine shadow appearance-none border rounded-lg w-full py-2 px-3  text-pink  placeholder-wine placeholder-opacity-80  leading-tight focus:outline-none focus:shadow-outline"
         id="land"
         type="text"
         placeholder="Indtast land"
       />
     </div>
     <div class="mb-4">
-      <label class="block text-gray-700 text-sm font-bold mb-2" for="deltagere">
+        <label class="block text-wine font-poppins text-sm font-bold mb-2" for="Slettet GB">
+          Land
+        </label>
+        <input
+          class=" border-wine shadow appearance-none border rounded-lg w-full py-2 px-3  text-pink  placeholder-wine placeholder-opacity-80  leading-tight focus:outline-none focus:shadow-outline"
+          id="GB"
+          type="text"
+          placeholder="Indtast mængde slettet GB"
+        />
+      </div>
+    <div class="mb-4">
+      <label class="block text-wine font-poppins text-sm font-bold mb-2" for="deltagere">
         Antal deltagere
-      </label>
-      <input
-        class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
+      </label> <!-- Kan ikke få teksten lyserød, og selve pile sat chekbokse er grå per deafult, vi kan bruge sperart css? -->
+      <input 
+        class="  border-wine shadow appearance-none border rounded-lg w-full py-2 px-3  leading-tight focus:outline-none focus:shadow-outline "
         id="deltagere"
         type="number"
         placeholder="Indtast antal deltagere"
@@ -62,11 +76,11 @@
       <div class="flex items-center">
         <input
           type="checkbox"
-          class="form-checkbox h-5 w-5 text-indigo-600"
+          class="form-checkbox rounded-full h-5 w-5 text-wine "
           id="accepter"
           name="accepter"
         />
-        <label class="ml-2 text-gray-700 text-sm font-bold" for="accepter">
+        <label class="ml-2 text-wine  text-sm font-bold font-poppins"  for="accepter">
           Jeg accepterer vilkår og betingelser
         </label>
       </div>
@@ -75,13 +89,14 @@
       <div class="flex items-center">
         <input
           type="checkbox"
-          class="form-checkbox h-5 w-5 text-indigo-600"
+          class="form-checkbox h-5 w-5 text-pink"
           id="nyhedsbrev"
           name="nyhedsbrev"
         />
-        <label class="ml-2 text-gray-700 text-sm font-bold" for="nyhedsbrev">
+        <label class="ml-2 text-wine text-sm font-bold font-poppins" for="nyhedsbrev">
           Tilmeld mig nyhedsbrev
         </label>
+    
       </div>
     </div>
 
@@ -90,6 +105,9 @@
      
     </div>
   </form>
+
 </div>
+</section>
+
 
 
