@@ -1,15 +1,15 @@
 ---
+import Button from '../components/Button.astro';
 ---
 
-<div class="bg-lightpink "> 
-    <h1 class="text-5xl font-bold font-poppins text-center text-pink mb-5 mt-5"> Guidelines til digital oprydning </h1>
-    <h2 class="text-xl font bold font-poppins text-center text-lightblue "> Her finder du en guide til at se hvor meget du har slettet <br> samt hvordan du bedst og nemmest gør det </h2>
+<div class="pt-24 max-w-2xl mx-auto">
+    <h1 class="text-5xl font-bold font-poppins text-center text-pink mb-5"> Guidelines til digital oprydning </h1>
+    <h2 class="text-xl font bold font-poppins text-center text-darkblue "> Her finder du en guide til at se hvor meget du har slettet <br> samt hvordan du bedst og nemmest gør det </h2>
 
-<div class="grid grid-cols-2 gap-4 mx-8 ">
+<div class="md:grid md:grid-cols-2 gap-20">
 
-
-    <p class="col-span-2 font-roboto  mt-10 mx-4"> 
-        <div class="col-span-1 mx-20 text-darkblue">
+    <p class="md:col-span-2 font-roboto  mt-10 "> 
+        <div class="col-span-1  text-darkblue">
             <h2 class="text-xl font-bold font-poppins  text-wine "> Ryd op i emails</h2> 
     <br> 
     Tjek den aktuelle størrelse af din mailbox.    
@@ -22,7 +22,7 @@
     
     <br> <br>Afbestil alle nyhedsbreve, der ikke har fanget din dybere opmærksomhed. Du kommer helt sikkert ikke til at læse dem i fremtiden. 
         </div>
-        <div class="col-span-1 mx-20 text-darkblue mt-7">
+        <div class="col-span-1  text-darkblue mt-7">
     
     FYI-E-mails (til din information) - bare SLET!
     
@@ -33,15 +33,16 @@
     
     <br> <br>Slet gamle aftaler fra dine online kalendere. Alle de forfaldne aftaler hober sig op i din kalender mappe og skaber digitalt affald. Gør det til en ugentlig rutine at slette dem.
     
-    <br> <br> <p class="font-bold"> Tillykke! Du gjorde virkelig et godt stykke arbejde! </p>
-    <button></button>
+    <br> <br> <p class="font-bold pb-12"> Tillykke! Du gjorde virkelig et godt stykke arbejde! </p>
+  <a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
         </div>
     
     </p>
 </div>
-<div class="grid grid-cols-2 gap-x-10 mx-8">
-    <p class="col-span-2 font-roboto mt-10 mx-4">
-        <div class="col-span-1 mx-20 text-darkblue">
+
+<div class="md:grid md:grid-cols-2 gap-20">
+    <p class="md:col-span-2 font-roboto mt-10">
+        <div class="col-span-1 text-darkblue">
             <h2 class="text-xl font-bold font-poppins text-wine">Ryd op i din telefon</h2> 
             <br>
             Skriv den aktuelle ledige lagerplads på din mobiltelefon ned.
@@ -55,9 +56,10 @@
             På Android-telefoner, gå til Indstillinger > Tryk på Lager overskriften > Find den app, du vil rydde > Ryd cache
             På iPhones, gå til Indstillinger > Safari > Ryd historik og webstedsdata > Ryd historik og data. Tjek også, hvor meget plads dine apps tager, gå til Indstillinger > Generelt > Brug (iPhone). Du bør slette de tungeste apps og geninstallere dem igen. Du vil blive overrasket over, hvor meget mere plads dette giver dig.
             <br> <br>
+            Opbevar dine vigtige dokumenter i skyen og fotos og videoer på eksterne harddiske. Har du virkelig brug for ti versioner af det samme billede, eller kan du gemme kun det bedste?  <br> <br>
         </div>
-        <div class="col-span-1 mx-20 text-darkblue mt-7">
-            Opbevar dine vigtige dokumenter i skyen og fotos og videoer på eksterne harddiske. Har du virkelig brug for ti versioner af det samme billede, eller kan du gemme kun det bedste?  <br> <br>Det er typisk at holde dine mest værdifulde minder kun på din telefon, og det er en stor risiko at miste dem alle på én gang! Så gem dine personlige fotos og videoer på eksterne harddiske og dine vigtige dokumenter i skytjenester som iCloud, Dropbox eller Microsoft OneDrive. På eksterne harddiske er dine billeder og videoer sikre uden at optage plads på din telefon. Ekstern opbevaring er en billig 
+        <div class="col-span-1  text-darkblue mt-7">
+            Det er typisk at holde dine mest værdifulde minder kun på din telefon, og det er en stor risiko at miste dem alle på én gang! Så gem dine personlige fotos og videoer på eksterne harddiske og dine vigtige dokumenter i skytjenester som iCloud, Dropbox eller Microsoft OneDrive. På eksterne harddiske er dine billeder og videoer sikre uden at optage plads på din telefon. Ekstern opbevaring er en billig 
 måde at gemme dine minder uden bekymring for at miste dem. Hvis du ikke har gjort dette før, er det nu tid til at starte!
 <br> <br>
 Gå tilbage til din telefons oprindelige lagrings størrelse - se tallet, du skrev ned i begyndelsen, og tjek derefter den aktuelle størrelse og lav beregningerne - hvor mange GB formåede du at slette?
@@ -65,11 +67,12 @@ Gå tilbage til din telefons oprindelige lagrings størrelse - se tallet, du skr
 Endelig, gå tilbage til vores kampagneside og udfyld antallet af slettede gigabyte. Hvis du vil fortsætte oprydningen, kan du deltage igen og indtaste de nye tal.
 <br> <br>
 
-            <p class="font-bold">
+            <p class="font-bold pb-12">
                 Tillykke! Du gjorde virkelig et godt stykke arbejde!
             </p>
-            <button></button>
+        <a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
         </div>
     </p>
 </div>
 
+</div>
