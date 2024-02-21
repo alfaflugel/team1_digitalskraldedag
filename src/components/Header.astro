@@ -1,23 +1,27 @@
 ---
+import Button from '../components/Button.astro';
 ---
-<header class="bg-darkblue text-wine font-poppins">
+<header class="bg-darkblue font-poppins">
 <div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full" >
 <div id="navbar" class="flex flex-row justify-between">
-<div id="logo" class="">
-<a href="#link1">Site logo</a>
+<div id="logo" class="w-10 h-10">
+<a href="#top"><img src="../../public/logo_blue.svg" alt=""></a>
+</div>
+<div class="flex justify-between gap-5">
+<button id="burgermenu"  x-on:click="showmenu = ! showmenu"><img class="w-8 h-8" src="../../public/menu.svg" alt=""></button>
+<a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
+</div>
 </div>
 
-<button id="burgermenu"  x-on:click="showmenu = ! showmenu"><img src="../../public/menu.svg" alt=""></button>
-</div>
 <nav id="mobilmenu" class="flex flex-col content-center pt-4" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
-<ul class="bg-lightpink text-darkblue font-poppins text-2xl font-bold">
-<li class="hover:translate-y-[-5px] p-1"><a href="#digitaltskrald">Hvad er digtalt skrald</a></li>
-<li class="hover:translate-y-[-5px] p-1"><a href="#vigtig">Hvorfor er det vigtigt?</a></li>
-<li class="hover:translate-y-[-5px] p-1"><a href="#vidstedu">Vidste du at?</a></li>
-<li class="hover:translate-y-[-5px] p-1"><a href="#guidelines">Guidelines til digtal oprydning</a></li>
-<li class="hover:translate-y-[-5px] p-1"><a href="#goderaad">Gode råd til digital oprydning</a></li>
-<li class="hover:translate-y-[-5px] p-1"><a href="#forms">Registrer din digitale oprydning</a></li>
+<ul class="bg-lightpink text-darkblue font-poppins text-2xl font-bold p-7">
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#digitaltskrald">Hvad er digtalt skrald</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#vigtig">Hvorfor er det vigtigt?</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#vidstedu">Vidste du at?</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#guidelines">Guidelines til digtal oprydning</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#goderaad">Gode råd til digital oprydning</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#forms">Registrer din digitale oprydning</a></li>
 </ul>
 </nav>
 </div>
