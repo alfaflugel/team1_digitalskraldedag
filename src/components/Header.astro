@@ -1,41 +1,28 @@
 ---
-
+import Button from '../components/Button.astro';
 ---
-<header>
-<!-- Hamburger Menu Icon -->
-<div class="fixed top-[40px] right-[100px] text-[40px]">
-    <ion-icon name="menu-outline" onclick="Open(this)"></ion-icon>
+<header class="bg-darkblue font-poppins">
+<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full" >
+<div id="navbar" class="flex flex-row justify-between">
+<div id="logo" class="w-10 h-10">
+<a href="#top"><img src="../../public/logo_blue.svg" alt=""></a>
+</div>
+<div class="flex justify-between gap-5">
+<button id="burgermenu"  x-on:click="showmenu = ! showmenu"><img class="w-8 h-8" src="../../public/menu.svg" alt=""></button>
+<a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
+</div>
 </div>
 
-
-<!-- Main Menu -->
-<div class="fixed bg-[#f8afd7] w-0 h-[100vh] text-darkblue flex justify-center items-center text-[40px] cursor-pointer overflow-hidden " id="hammm">
-    <ul class="font-poppins font-bold">
-        <li class="hover:translate-y-[-5px]"><a href="#digitalskrald">Hvad er digitalt skrald</a></li>
-        <li class="hover:translate-y-[-5px]"><a href="#">Hvorfor er det vigtigt?</a></li>
-        <li class="hover:translate-y-[-5px]"><a href="#vidstedu">Vidste du at? </a></li>
-        <li class="hover:translate-y-[-5px]"><a href="#">Guidelines til digital oprydning</a></li>
-        <li class="hover:translate-y-[-5px]"><a href="#">Gode råd til digital oprydning</a></li>
-        <li class="hover:translate-y-[-5px]"><a href="#">Registrer din digitale oprydning</a></li>
-    </ul>
-    <!-- Close Button -->
-    <div class="absolute top-[40px] right-[100px] text-[40px] cursor-pointer">
-        <ion-icon name="close-outline" onclick="Close(this)"></ion-icon>
-    </div>
+<nav id="mobilmenu" class="flex flex-col content-center pt-4" 
+x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
+<ul class="bg-lightpink text-darkblue font-poppins text-2xl font-bold p-7">
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#digitaltskrald">Hvad er digtalt skrald</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#vigtig">Hvorfor er det vigtigt?</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#vidstedu">Vidste du at?</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#guidelines">Guidelines til digtal oprydning</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#goderaad">Gode råd til digital oprydning</a></li>
+<li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#forms">Registrer din digitale oprydning</a></li>
+</ul>
+</nav>
 </div>
 </header>
-
-
-
-
-<script>
-    let ham = document. 
-    getElementById('hammm')
-    function Open(){
-        ham.classList.add('w-[100%]')
-    }
-    function Close(){
-        ham.classList.remove('w-[100%]')
-    }
-</script>
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

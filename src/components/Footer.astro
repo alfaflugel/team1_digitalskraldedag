@@ -1,13 +1,19 @@
 ---
+import Button from '../components/Button.astro';
 ---
   <footer class="bg-darkblue">
     <section class="grid grid-cols-2 gap-4">
         <div class="">
-<h1 class="font-poppins text-pink text-3xl font-bold">DIGITAL SKRALDEDAG</h1>
-<p class="font-roboto text-lightblue text-sm font-normal">Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. Digitalt skrald sidder i backupfiler på servere, der leverer os skytjenester, og fortsætter med at forbruge elektricitet.</p>
+<h1 class="font-poppins text-pink text-3xl font-bold p-7">DIGITAL SKRALDEDAG</h1>
+<p class="font-roboto text-lightblue text-sm font-normal pl-7">Dette digitale affald skaber digital forurening, der fortsætter med at forbruge energi, selv når vi har glemt det. Digitalt skrald sidder i backupfiler på servere, der leverer os skytjenester, og fortsætter med at forbruge elektricitet.</p>
         </div>
         <div>
-            <h2 class="font-poppins text-lightpink text-base absolute top-0 right-0 font-bold">16 MARTS 2024</h2>
+            <h2 class="font-poppins text-lightpink text-base font-bold flex justify-end p-5">16 MARTS 2024</h2>
+        </div>
+
+        <div class="flex gap-20 p-7 whitespace-nowrap">
+          <a href="#"><Button variant="primary" size="medium">Inviter en ven</Button></a>
+          <a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
         </div>
     </section>
   </footer>

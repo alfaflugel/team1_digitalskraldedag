@@ -2,10 +2,10 @@
 import Button from '../components/Button.astro';
 ---
 
-<div class="bg-darkblue py-28">
+<div class="bg-darkblue pt-16 pb-28">
 <div>
-    <h1 class="text-orange text-7xl font-bold font-poppins text-center mb-12">DIGITAL SKRALDEDAG</h1>
-    <p class="text-lightpink text-center font-light font-poppins mb-12">Reducer din personlige CO2-udledning og vær med i kampen om en grønnere fremtid</p>
+    <h1 class="text-orange text-7xl font-bold font-poppins text-center mb-4">DIGITAL <span class="text-pink">SKRALDEDAG</span></h1>
+    <p class="text-lightpink text-center font-light font-poppins mb-24">Reducer din personlige CO2-udledning og vær med i kampen om en grønnere fremtid</p>
     <p class="font-bold text-lightpink text-center font-poppins text-3xl tracking-widest">16 marts 2024</p>
     </div>
 
@@ -13,16 +13,19 @@ import Button from '../components/Button.astro';
 
   <div id="countdown">
     <ul>
-      <li><span class="text-orange" id="days"></span>days</li>
-      <li><span class="text-orange" id="hours"></span>Hours</li>
-      <li><span class="text-orange" id="minutes"></span>Minutes</li>
-      <li><span class="text-orange" id="seconds"></span>Seconds</li>
+      <li class="text-wine"  ><span class="text-lightpink" id="days"></span>days</li>
+      <li class="text-wine"  ><span class="text-lightpink" id="hours"></span>Hours</li>
+      <li class="text-wine"  ><span class="text-lightpink" id="minutes"></span>Minutes</li>
+      <li class="text-wine"  ><span class="text-lightpink" id="seconds"></span>Seconds</li>
     </ul>
   </div>
 
 </div>
+<div class="flex justify-center pt-8">
 <Button>Inviter en ven</Button>
 </div>
+</div>
+
 
 
 <script>
