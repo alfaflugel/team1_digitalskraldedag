@@ -1,9 +1,9 @@
 ---
 import Button from '../components/Button.astro';
 ---
-<header class="bg-darkblue font-poppins fixed top-0 w-full">
-<div x-data="{ showmenu: false }" class="p-4 fixed lg:static w-full" >
-<div id="navbar" class="flex flex-row justify-between">
+<header class=" font-poppins fixed top-0 w-full">
+<div x-data="{ showmenu: false }" class="fixed lg:static w-full" >
+<div id="navbar" class="flex flex-row justify-between bg-darkblue p-4">
 <div id="logo" class="w-10 h-10">
 <a href="#top"><img src="../../public/logo_blue.svg" alt=""></a>
 </div>
@@ -12,7 +12,7 @@ import Button from '../components/Button.astro';
 <a href="#forms"><Button variant="primary" size="medium">Regsistrer</Button></a>
 </div>
 </div>
-
+<div class="flex justify-end mr-5">
 <nav id="mobilmenu" class="flex flex-col content-center pt-4 w-fit z-10" 
 x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside="showmenu = false">
 <ul class="bg-lightpink text-darkblue font-poppins text-2xl font-bold p-7">
@@ -24,5 +24,6 @@ x-show="showmenu" x-transition x-on:click="showmenu = false" x-on:click.outside=
 <li class="hover:translate-y-[-5px] hover:text-pink p-1"><a href="#forms">Registrer din digitale oprydning</a></li>
 </ul>
 </nav>
+</div>
 </div>
 </header>
