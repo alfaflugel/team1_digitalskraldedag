@@ -1,3 +1,8 @@
+---
+import Button from '../components/Button.astro';
+---
+
+
 <section class="bg-lightpink"> 
 
 
@@ -5,7 +10,7 @@
   Regsistrer din digitale oprydning
 </h1>
 <div class="max-w-md mx-auto pb-36">
-  <form class="bg-lightblue shadow-md rounded px-8 pt-6 mt-20 ">
+  <form class="bg-lightblue shadow-md rounded px-8 pt-6 mt-20 max-w-xl">
     <div class="mb-4 ">
       <label class="block text-wine  font-poppins text-sm font-bold mb-2" for="fornavn">
         Fornavn
@@ -99,9 +104,9 @@
     
       </div>
     </div>
-
-      <button></button>
-        
+    <div class="flex justify-end p-5"> 
+      <a href="#forms"><Button variant="primary" size="medium">Tilmeld</Button></a>
+    </div>
      
     </div>
   </form>
